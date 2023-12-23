@@ -5,6 +5,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
+    "dev": "npx nodemon app.js",
     "start": "node app.js"
   },
   "dependencies": {
