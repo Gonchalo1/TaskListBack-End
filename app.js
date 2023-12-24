@@ -21,9 +21,8 @@ const corsOptions = {
 };
 
 const app = express();
-app.use(express.json());
 app.use(cors(corsOptions));
-
+app.use(express.json());
 app.get("/todos/:id", async(req,res)=>{
     const todos = await getTodosById(req.params.id);
     res.status(200).send(todos);
