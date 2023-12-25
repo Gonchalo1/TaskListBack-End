@@ -1,5 +1,7 @@
 import express from "express";
 
+
+
 import{
     getTodo,
     shareTodo,
@@ -21,6 +23,8 @@ const corsOptions = {
 };
 
 const app = express();
+
+
 app.use(cors(corsOptions));
 app.use(express.json());
 app.get("/todos/:id", async(req,res)=>{
